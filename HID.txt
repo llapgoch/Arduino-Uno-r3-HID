@@ -1,0 +1,9 @@
+// Restore - USE FROM IDE
+sudo dfu-programmer atmega16u2 erase
+sudo dfu-programmer atmega16u2 flash --debug 1 /Users/Dave/Desktop/Arduino/Arduino-usbserial-uno.hex
+sudo dfu-programmer atmega16u2 reset
+
+// HID - Not usable from IDE
+sudo dfu-programmer atmega16u2 erase
+sudo dfu-programmer atmega16u2 flash --debug 1 Arduino-keyboard-0.3.hex
+sudo dfu-programmer atmega16u2 reset
